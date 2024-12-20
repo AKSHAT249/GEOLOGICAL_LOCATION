@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Get LOC</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body style="margin:0;">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div  style="width:1728px;  background-color:white; color:black; padding:20px 200px 20px 20px; padding-left:20px;">
+            <h1>Time Zone API</h1>
+            <h1>Your Current Time Zone</h1>
+            <div id="div1" style="border:2px solid black; display:flex; flex-direction:column; padding:20px 20px 20px 20px;">
+                <p>Name of Time Zone:</p>
+                <div style="display:flex; flex-direction:row; justify-content:flex-start; gap:500px; align-items:flex-start;">
+                    <p>Lat:</p>
+                    <p>Long:</p>
+                </div>
+                <p>Offset STD:</p>
+                <p>Offset STD Seconds:</p>
+                <p>Offset DST:</p>
+                <p>Offset DST Seconds:</p>
+                <p>Country:</p>
+                <p>Postcode:</p>
+                <p>City:</p>
+
+            </div>
+
+
+        </div>
+
+        <div style="width:1728px;  background-color:black; color:white; padding:20px 200px 20px 20px; padding-left:20px;">
+            <div style="display:flex; flex-direction:column; gap:20px;">
+                <h1>Enter Address</h1>
+                <input type="text" id="address"  style="background-color:black; color:white; border:1px solid white; padding:10px 10px 10px 10px;" />
+                <button onclick="search(event)" style="background-color:white; color:black; padding:10px 10px 10px 10px; width:150px; ">Submit</button>
+
+
+            </div>
+
+            <p id="error"></p>
+            
+               
+
+            <h1 id="result_header">Your Result</h1>
+            
+            <div id="div2" style="border:2px solid black; display:flex; flex-direction:column; padding:20px 20px 20px 20px;">
+                <p>Name of Time Zone:</p>
+                <div style="display:flex; flex-direction:row; justify-content:flex-start; gap:500px; align-items:flex-start;">
+                    <p>Lat:</p>
+                    <p>Long:</p>
+                </div>
+                <p>Offset STD:</p>
+                <p>Offset STD Seconds:</p>
+                <p>Offset DST:</p>
+                <p>Offset DST Seconds:</p>
+                <p>Country:</p>
+                <p>Postcode:</p>
+                <p>City:</p>
+
+            </div>
+
+
+        </div>
+        
+        <script src="./script.js" async defer></script>
+    </body>
+</html>
