@@ -13,7 +13,7 @@ navigator.geolocation.getCurrentPosition( (data) => {
 
 const fetchLocation = async (lat, lon) => {
     // const API_KEY = process.env.API_KEY;
-    const API_KEY = 'fcc6657ab1534bf393ee9589203199e7'; // NOT_SAFE_TO_ATTACH
+    const API_KEY = 'fcc6657ab1534bf393ee9589203199e7';
     // console.log(API_KEY)
     console.log("lat", lat);
     console.log("lon", lat)
@@ -48,7 +48,7 @@ const fetchLocation = async (lat, lon) => {
 
 
 const search =async (event) => {
-    const API_KEY = 'fcc6657ab1534bf393ee9589203199e7'; // NOT SAFE TO ATTACh
+    const API_KEY = 'fcc6657ab1534bf393ee9589203199e7';
     event.preventDefault();
     const address = document.getElementById("address").value;
 
